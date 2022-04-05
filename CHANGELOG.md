@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/sitkoru/docker-pgbouncer/compare/v1.0.0...v1.1.0) (2022-04-05)
+
+
+### Features
+
+* remove "v" from version, add latest ([cc2ed86](https://github.com/sitkoru/docker-pgbouncer/commit/cc2ed86525540694dae11624355e73888964e125))
+
 # 1.0.0 (2022-04-05)
 
 
