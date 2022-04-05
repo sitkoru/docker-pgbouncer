@@ -15,14 +15,14 @@ jobs:
         shell: bash
         run: |
           DOCKER_IMAGE=ghcr.io/sitkoru/pgbouncer
-          VERSION=${GITHUB_REF#refs/tags/}
+          VERSION=${GITHUB_REF#refs/tags/v}
           echo VERSION=${VERSION}
           MAJOR=`echo $VERSION | cut -d. -f1`
           echo MAJOR=${MAJOR}
           MINOR=`echo $VERSION | cut -d. -f2`
           echo MINOR=${MINOR}
           if [[ $VERSION =~ ^v.*$ ]]; then
-            TAGS="${DOCKER_IMAGE}:${VERSION},${DOCKER_IMAGE}:${MAJOR}.${MINOR},${DOCKER_IMAGE}:${MAJOR}"
+            TAGS="${DOCKER_IMAGE}:${VERSION},${DOCKER_IMAGE}:${MAJOR}.${MINOR},${DOCKER_IMAGE}:${MAJOR},${DOCKER_IMAGE}:latest"
           else
             TAGS="${DOCKER_IMAGE}:${VERSION}-${{ github.run_id }}"
           fi
