@@ -22,8 +22,6 @@ RUN \
   cp etc/pgbouncer.ini /etc/pgbouncer/pgbouncer.ini.example && \
   cp etc/userlist.txt /etc/pgbouncer/userlist.txt.example && \
   touch /etc/pgbouncer/userlist.txt && \
-  addgroup -g 70 -S postgres 2>/dev/null && \
-  adduser -u 70 -S -D -H -h /var/lib/postgresql -g "Postgres user" -s /bin/sh -G postgres postgres 2>/dev/null && \
   chown -R postgres /var/run/pgbouncer /etc/pgbouncer && \
   # Cleanup
   cd /tmp && \
