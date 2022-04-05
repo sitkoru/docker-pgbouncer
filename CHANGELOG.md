@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/sitkoru/docker-pgbouncer/compare/v1.1.0...v1.1.1) (2022-04-05)
+
+
+### Bug Fixes
+
+* tag format ([73b7f69](https://github.com/sitkoru/docker-pgbouncer/commit/73b7f694cfd56c3d9d84f5f7fb3c2f94d6368c90))
+
 # [1.1.0](https://github.com/sitkoru/docker-pgbouncer/compare/v1.0.0...v1.1.0) (2022-04-05)
 
 
